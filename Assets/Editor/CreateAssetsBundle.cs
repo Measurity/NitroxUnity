@@ -14,7 +14,7 @@ namespace Assets.Editor
                 Directory.Delete(assetBundleDirectory, true);
             }
             Directory.CreateDirectory(assetBundleDirectory);
-            BuildPipeline.BuildAssetBundles(assetBundleDirectory, BuildAssetBundleOptions.None,
+            BuildPipeline.BuildAssetBundles(assetBundleDirectory, BuildAssetBundleOptions.ForceRebuildAssetBundle,
                 BuildTarget.StandaloneWindows);
         }
     }
